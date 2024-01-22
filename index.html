@@ -3,45 +3,185 @@
 <head>
     <title>Larasati Krisantin Mbunpagi - English Tutor & Life Coach</title>
     <style>
-        /* CSS styles are defined here */
-         body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
-    /* Additional CSS styles for other elements */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .showcase {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/7bwQXzbF6KE/1920x1080') no-repeat 0 -400px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px #e8491d solid;
+        }
+        .section:last-child {
+            border-bottom: 0;
+        }
+        .section .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section .container h1, .section .container p {
+            padding-bottom: 10px;
+        }
+        .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+        .box img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Header with navigation links -->
+        <div class="container">
+            <div id="branding">
+                <h1>Larasati Krisantin Mbunpagi</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">About Me</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="showcase">
-        <!-- Showcase section with introduction -->
+        <div class="container">
+            <h1>Empowering Growth Through Language</h1>
+            <p>Discover your potential with personalized English lessons and life coaching</p>
+        </div>
     </section>
 
     <section id="about" class="section">
-        <!-- About Me section -->
+        <div class="container">
+            <h1>About Me</h1>
+            <p>I am Larasati Krisantin Mbunpagi, a dedicated English tutor and life coach. My philosophy revolves around creating a growth-based learning environment for adults, tailored to each student's needs. My teaching style is fluid, adapting to each individual's learning style, and is embedded with personal growth coaching. As I teach, I grow alongside my students, fostering a journey of mutual development and success.</p>
+        </div>
     </section>
 
     <section id="reviews" class="section">
-        <!-- Reviews section -->
+        <div class="container">
+            <h1>Reviews</h1>
+            <p>Here's what my students say:</p>
+            <!-- Testimonials can be added here -->
+        </div>
     </section>
 
     <section id="services" class="section">
-        <!-- Services section -->
+        <div class="container">
+            <h1>Services</h1>
+            <div class="box">
+                <img src="https://source.unsplash.com/PeFk7fzxTdk/100x100">
+                <h3>Personalized Lessons</h3>
+                <p>Each lesson is tailored to your unique needs and goals.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/LQ1t-8Ms5PY/100x100">
+                <h3>Life Coaching</h3>
+                <p>Guidance and support to help you achieve personal growth.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/G9_Euqxpu4k/100x100">
+                <h3>Flexible Scheduling</h3>
+                <p>Learn at your convenience with flexible time slots.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="section">
-        <!-- Contact section with form placeholder -->
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Get in touch to start your journey:</p>
+            <!-- Contact form placeholder -->
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <!-- Footer -->
+        <p>&copy; 2024 Larasati Krisantin Mbunpagi. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
